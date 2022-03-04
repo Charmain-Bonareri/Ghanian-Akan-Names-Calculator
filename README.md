@@ -1,10 +1,10 @@
-# charmains-first-ip
+# Akan-Names-Calculator
 
 This is a web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name.
 
 ### By Charmain Bonareri, 04/03/2022
 
-<img alt="Charmain's Portfolio" title="Charmain's Portfolio" src="./charmain-images/readmeimage.png" height="500">
+<img alt="Ghanian Culture" title="Ghanian Culture" src="./charmain-images/readmeimage.png" height="500">
 
 ## Table of contents
 * [Description](#description)
