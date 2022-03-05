@@ -33,10 +33,49 @@
         <p>Most people do know when their birthdays are, but some might not know what day of the week they were born. Luckily for us, we will 
           be able to take the user's birthday and calculate the day of the week they were born and then depending on their gender output their Akan Name.</p>
   
-  
     </div>
     </div>
 
+    <div class="birthdayGenderCollector">
+
+      <h2>Match the day of the week you were born with its respective Akan name</h2>
+     
+      
+      <form action="">
+
+          <!-- Input birth -->
+
+          <div>
+              <label for="date">Enter your Date of Birth</label>
+              <input id="birthDate" type="date" placeholder="">
+          </div>
+
+          <p id="emptyDate"></p>
+          <!-- Input Gender -->
+
+          <h3>Select Gender</h3>
+          <div id="radioInput">
+              <input id="genderMale" type="radio" name="gender">
+              <label for="gender">Male</label>
+          </div>
+          <div id="radioInput">
+              <input id="genderFemale" type="radio" name="gender">
+              <label for="gender">Female</label>
+          </div>
+
+          <p id="warning"></p>
+          <!-- Button Submit -->
+
+          <button type="submit" onclick="akanNameCalculator();">Submit</button>
+         
+      </form>
+      
+     
+  </div>
+  <div class="myResults">
+      <h4>Results:</h4>
+      <p id="results"></p>
+  </div>
 
 
 
