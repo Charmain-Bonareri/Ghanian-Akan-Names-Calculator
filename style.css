@@ -1,11 +1,16 @@
 body{
     background-image: url(./Images/whitebackground.png);   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #container{
     width: 80%;
     display:flex;
     align-items: center;
+    float: left;
    }
 
 h1{
@@ -23,29 +28,29 @@ h1{
     }
     .container2{
     
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  
     }
 
     .birthdayGenderCollector {
         width: 50%;
         padding: 40px;
         background-color: white;
-        border: 1px solid purple;
+        border: 1px solid #f54e0c;
         border-radius: 4px;
         box-shadow: 0px 0px 5px gray;
         box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
          }
     
     h2 {
         margin-bottom: 20px;
         font-size: 25px;
+        font-family: 'Montserrat', sans-serif;
     }
     
     h3 {
         margin-bottom: 20px;
+        font-family: 'Montserrat', sans-serif;
     }
     
     form {
@@ -85,7 +90,7 @@ h1{
         padding: 10px;
         margin-top: 10px;
         width: 30%;
-        background-color: purple;
+        background-color: #f54e0c;
         color: white;
         border: none;
         border-radius: 4px;
