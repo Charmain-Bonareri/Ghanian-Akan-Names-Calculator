@@ -1,3 +1,10 @@
 body{
     background-image: url(./Images/whitebackground.png);
 }
+
+#container{
+    margin: 0px;
+    width: 80%;
+    padding: 6px;
+    display:flex;
+    align-items: center;
