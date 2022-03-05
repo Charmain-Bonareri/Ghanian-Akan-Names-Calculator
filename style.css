@@ -3,8 +3,16 @@ body{
 }
 
 #container{
-    margin: 0px;
     width: 80%;
-    padding: 6px;
     display:flex;
     align-items: center;
+}
+
+h1{
+        font-weight: 980;
+        text-align: center;
+        margin: 3%;
+        color: #477236 ;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+    }
