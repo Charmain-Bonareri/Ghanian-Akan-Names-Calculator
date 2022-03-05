@@ -1,11 +1,5 @@
 body{
-    background-image: url(./Images/whitebackground.png);
-    box-sizing: border-box;
-        display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
+    background-image: url(./Images/whitebackground.png);   
 }
 
 #container{
@@ -27,6 +21,14 @@ h1{
         font-weight: 300;
         text-align: justify;
     }
+    .container2{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
     .birthdayGenderCollector {
         width: 50%;
         padding: 40px;
@@ -34,7 +36,8 @@ h1{
         border: 1px solid purple;
         border-radius: 4px;
         box-shadow: 0px 0px 5px gray;
-    }
+        box-sizing: border-box;
+         }
     
     h2 {
         margin-bottom: 20px;
