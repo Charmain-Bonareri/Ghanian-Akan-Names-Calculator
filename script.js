@@ -33,7 +33,6 @@ function validate(){
         for(var i = 0;i<gender.length;i++){
             if(gender[i].checked){
                 valid = true;
-                valid = false;
                 break;
             }
         }
