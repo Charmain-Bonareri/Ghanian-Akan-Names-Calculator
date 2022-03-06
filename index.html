@@ -38,44 +38,46 @@
     </div>
 
     
-    <div class="birthdayGenderCollector">
-      <h3>Enter your birthday to find out the day of the week you were born and your respective Akan name</h3>
-     
-      
-      <form action="">
+    <div class="col-md-6 main-right">
+                        <h2>Match the day of the week you were born with its respective Akan name</h2>
+                        <div class="form">
+                            <form name="akanform" onsubmit="return false" >
+                                <div class="dates">
+                                    <ul>
+                                        <li>
+                                            <label for="">Date of Birth</label>
+                                        </li>
+                                        <li>
+                                            <input type="date" class="dob" name="mydate" id="mydate" >
+                                        </li>
+                                        <li><div class = "errormessage" id = "mydateerror"></div></li>
+                                    </ul>
+                                </div>
+                                <div class="gender">
+                                    <ul>
+                                        <li>
+                                            <label for="">Gender</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="gender" value="male" class="radio" id="male">Male
+                                            <input type="radio" name="gender" value="female" class="radio"  id="female" style="margin-left: 40px;">Female
+                                        </li>
+                                        <li><div class = "errormessage" id = "gendererror"></div></li>
+                                    </ul>
+                                    
+                                </div>  
+                                <input type="submit" name="submit" class="button" value="Generate" onclick="validate()"  style="margin-left: 40px;">
+                                <input type="reset" onclick="refresh(); return false;" class="button" value="Refresh">	
+                            </form>
+                            <hr>
+                            <div class="diplay" id="display"></div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+       </div>
+   </div> 
 
-          
-          <div>
-              <label for="date">Enter your Date of Birth</label>
-              <input id="birthDate" type="date" placeholder="">
-          </div>
-
-          <p id="emptyDate"></p>
-          <!-- Input Gender -->
-
-          <h3>Select Gender</h3>
-          <div id="radioInput">
-              <input id="genderMale" type="radio" name="gender">
-              <label for="gender">Male</label>
-          </div>
-          <div id="radioInput">
-              <input id="genderFemale" type="radio" name="gender">
-              <label for="gender">Female</label>
-          </div>
-
-          <p id="warning"></p>
-          <!-- Button Submit -->
-
-          <button type="submit" onclick="akanNameCalculator();">Submit</button>
-         
-      </form>
-      
-     
-  </div>
-  <div class="myResults">
-      <h4>Results:</h4>
-      <p id="results"></p>
-  </div>
 
   <div class="container">
     <div class="row">

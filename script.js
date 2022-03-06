@@ -1,67 +1,65 @@
-function akanNameCalculator() {
+//validation function
+function validate(){
 
-    
     //getting date input from the form
-    let mydate = document.getElementById("mydate");
+    var mydate = document.getElementById("mydate");
     //var mydate = document.forms["akanform"]["mydate"];
-    let gender = document.akanform.gender;
+    var gender = document.akanform.gender;
 
-    try {
+    var bday = mydate.value;
+    var date = new Date(document.getElementById("mydate").value);
+    var dateday = date.getDay();
+    var weekdays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    var day = weekdays[dateday];
+    var mName =["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+    var fName = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+    var valid = false; 
 
-        if (inputDate == "") throw "Empty"
-    }
+    //getting error display objects
+    var mydateerror = document.getElementById('mydateerror');
+    var gendererror = document.getElementById('gendererror');
 
-    catch {
-        document.getElementById("emptyDate").innerHTML = "*Date field required"
-        
-    }
-   
-        
-    // Get day
+    //get diplay object
+    var display = document.getElementById('display');
 
-    
-    let date = new Date(inputDate);
-    let birthDate = date.getDay();
-     
-
-    // Store Akan names in Arrays
-
-
-    let maleAkan = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-    let femaleAkan = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-
-    
-    // Find male Akan from birthDate
-
-    
-    if (document.getElementById("genderMale").checked && (inputDate != "")) {
-
-        document.getElementById("results").innerHTML =
-         "According to your gender, your Akan name is: " + "<strong>" +
-         maleAkan[birthDate] + "</strong>";
-
+    if(mydate.value == ""){
+        mydate.style.backgroundColor = "#ff9900be";
+        mydate.style.border = "2px groove red";
+        mydateerror.innerHTML = "Please enter a valid date ";
+        mydate.focus();
+        return false;
+    }else{
+        //validating and selecting gender
+        for(var i = 0;i<gender.length;i++){
+            if(gender[i].checked){
+                valid = true;
+                break;
+            }
         }
-
-        
-    // Find male Akan from birthDate
-
-
-    else if(document.getElementById("genderFemale").checked && (inputDate != "")) {
-
-        document.getElementById("results").innerHTML = 
-        "According to your gender, your Akan name is: " + "<strong>" +
-         femaleAkan[birthDate] + "</strong>";
-
-        }
-
-
-    // Warning
-        
-
-    else if(!document.getElementById("genderFemale").checked && !document.getElementById("genderMale").checked) {
-
-        document.getElementById("warning").innerHTML = 
-        "*Select your gender";
-        
+        if(valid){
+            if(gender[i].value == "male"){
+                display.innerHTML = "You were born on a "+day+".<br>"+"Your Akan Name is " + mName[dateday]; 
+            }else{
+            if(gender[i].value == "female"){
+                display.innerHTML = "You were born on a "+day+".<br>"+"Your Akan Name is " + fName[dateday]; 
+            }
+            }
+        }else{
+            gendererror.innerHTML = "Please select gender";
+            return false;
+        }    
     }
+}
+function refresh(){
+    document.getElementById('mydateerror').innerHTML = "";
+    document.getElementById('gendererror').innerHTML = "";
+    document.getElementById('display').innerHTML = "";
+    mydate.value = "";
+    mydate.style.backgroundColor = "white";
+    mydate.style.border = "none";
+    mydate.style.borderBottom = "2px solid #ff5722";
+    var ele = document.getElementsByName("gender");
+
+    for(var j=0;j<gender.length;j++)
+       gender[j].checked = false;
 }
