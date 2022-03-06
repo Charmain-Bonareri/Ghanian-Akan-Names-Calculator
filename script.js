@@ -22,7 +22,7 @@ function validate(){
     //get diplay object
     var display = document.getElementById('display');
 
-    if(mybirthdate.value == ""){
+    if(mydate.value == ""){
         mydate.style.backgroundColor = "#ff9900be";
         mydate.style.border = "2px groove red";
         mydateerror.innerHTML = "Please enter a valid date ";
@@ -33,6 +33,7 @@ function validate(){
         for(var i = 0;i<gender.length;i++){
             if(gender[i].checked){
                 valid = true;
+                valid = false;
                 break;
             }
         }
