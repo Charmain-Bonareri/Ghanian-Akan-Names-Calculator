@@ -8,7 +8,7 @@ This is a web application that takes a user's birthday and calculates the day of
 ## Table of contents
 * [Description](#description)
 * [Setup and Installation Requirements](#setup)
-* [Development](#development)
+* [Behaviour Driven Development](#BDD)
 * [Technologies](#technologies)
 * [Licence](#licence)
 * [Authors information](#contact)
@@ -46,7 +46,7 @@ copyright (c) 2022 Charmain Bonareri. All Rights Reserved.
 
 
 ## Authors information
-Contributions are always welcome! 
-If you have any questions,comments or correctional advice,feel free to contact me
+Contributions are always welcome!  
+If you have any questions,comments or correctional advice, feel free to contact me
 * Email: mogerecharmain@gmail.com
 * [LinkedIn](https://www.linkedin.com/in/charmain-bonareri-71a209126/)
