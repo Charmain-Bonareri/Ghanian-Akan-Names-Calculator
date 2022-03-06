@@ -29,7 +29,7 @@ $ Run the code from VS Code or Atom through a liveserver to chrome browser.
 $ Make changes where need be.
 ```
 ## Behaviour Driven Development (BDD)
-This webpage utilizes is documented and designed around the behavior a user expects to experience when interacting with it.
+This webpage is documented and designed around the behavior a user expects to experience when interacting with it.
 
 - When the user enters the valid input on the form, the day they were born and their respective Akan name should be actioned.
 - When the user adds an invalid input, an alert message should pop up.
