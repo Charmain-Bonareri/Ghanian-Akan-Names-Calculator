@@ -6,7 +6,7 @@ function validate(){
     //var mydate = document.forms["akanform"]["mydate"];
     var gender = document.akanform.gender;
 
-    var birthday = mydate.value;
+    var bday = mydate.value;
     var date = new Date(document.getElementById("mydate").value);
     var dateday = date.getDay();
     var weekdays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
@@ -22,7 +22,7 @@ function validate(){
     //get diplay object
     var display = document.getElementById('display');
 
-    if(mydate.value == ""){
+    if(mybirthdate.value == ""){
         mydate.style.backgroundColor = "#ff9900be";
         mydate.style.border = "2px groove red";
         mydateerror.innerHTML = "Please enter a valid date ";
