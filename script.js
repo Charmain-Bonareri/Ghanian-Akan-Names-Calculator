@@ -6,7 +6,7 @@ function validate(){
     //var mydate = document.forms["akanform"]["mydate"];
     var gender = document.akanform.gender;
 
-    var bday = mydate.value;
+    var birthday = mydate.value;
     var date = new Date(document.getElementById("mydate").value);
     var dateday = date.getDay();
     var weekdays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
